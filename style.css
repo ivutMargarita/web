@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0e0e7d 	;
+    color: #fff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+main .navigation{
+    flex: 1;
+    display: flex;
+    background: #4169e1;
+}
+
+main .content {
+    flex: 2;
+    padding: 10px;
+    background: #0000ff;
+    color:#fff;
+   
+}
+main .line{
+    border-bottom: 1px solid #fff;
+}
+.text-container {
+    font-size: 16px; /* Размер шрифта (по желанию) */
+    line-height: 1.8; /* Межстрочное расстояние (по желанию) */
+    text-align: left; /* Выравнивание текста (по желанию) */
+}
+
+.text-container2 {
+    font-size: 16px; /* Размер шрифта (по желанию) */
+    line-height: 1.4; /* Межстрочное расстояние (по желанию) */
+    text-align: left; /* Выравнивание текста (по желанию) */
+}
+
+
+main .sidebar {
+    flex: 1;
+    background: #4169e1;
+}
+
+
+footer {
+    background:#0e0e7d 	;
+    color: #fff;
+}
+@media (min-width: 600px) {
+    body {
+        max-height: none; /* Удаляем максимальную высоту */
+        height: 100vh; /* Заполняем всё доступное вертикальное пространство браузера */
+        overflow-y: auto; /* Включаем вертикальный скролл при необходимости */
+    }
+}
+header, footer {
+    height: 5em;
+}
+
+
+@media (min-width: 600px) {
+    main {
+        flex-direction: row; /* При ширине экрана >= 600px - расположение в строку */
+    }
+}
